@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Video Room - Pramod Tech</title>
+</head>
+<body>
+  <h2>Welcome to the Room!</h2>
+  <p>This is a placeholder. Real video call features will come here.</p>
+  <p><strong>Your Name:</strong> <span id="yourName"></span></p>
+  <p><strong>Room Code:</strong> <span id="roomCode"></span></p>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    document.getElementById('yourName').textContent = urlParams.get('name');
+    document.getElementById('roomCode').textContent = urlParams.get('room');
+  </script>
+</body>
+</html>
